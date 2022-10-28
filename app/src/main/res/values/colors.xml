@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- My colors -->
+    <color name="white_smoke">#FFF7F7F7</color>
+    <color name="black_olive">#FF3A3A3A</color>
+    <color name="gray_99">#FFFCFCFC</color>
+    <color name="blue_grey_2_primary">#FF4C556C</color>
+
+    <color name="light_gray">#FFCBCBCB</color>
+    <color name="ripple_gray">#B5BCBFC8</color>
 </resources>

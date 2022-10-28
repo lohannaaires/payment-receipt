@@ -12,5 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white_smoke</item>
+        <item name="android:textColor">@color/black_olive</item>
+    </style>
+
+    <style name="Theme.MyStyle" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
     </style>
 </resources>
