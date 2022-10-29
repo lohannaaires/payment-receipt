@@ -3,6 +3,7 @@
     <string name="success_message">Boleto Gerado com Sucesso!</string>
     <string name="text_info">O pagamento do boleto pode levar até 3 dias úteis para ser confirmado.</string>
     <string name="value_label">Valor do boleto</string>
+    <string name="value">R$ %1$s</string>
     <string name="date_label">Data de Vencimento</string>
     <string name="btn_copy">Copiar código de barras</string>
     <string name="btn_open_document">Abrir documento</string>
