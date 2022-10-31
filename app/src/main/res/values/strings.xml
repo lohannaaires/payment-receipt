@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Payment Receipt</string>
+    <string name="app_name">Tela de Comprovante</string>
     <string name="success_message">Boleto Gerado com Sucesso!</string>
     <string name="text_info">O pagamento do boleto pode levar até 3 dias úteis para ser confirmado.</string>
     <string name="value_label">Valor do boleto</string>

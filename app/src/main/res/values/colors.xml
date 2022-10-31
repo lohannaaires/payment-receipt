@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- My colors -->
+    <color name="white_primary">#FFF6F6F6</color>
     <color name="white_smoke">#FFF7F7F7</color>
     <color name="black_olive">#FF3A3A3A</color>
     <color name="gray_99">#FFFCFCFC</color>
