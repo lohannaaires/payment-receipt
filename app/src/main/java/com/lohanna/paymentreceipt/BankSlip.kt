@@ -13,3 +13,12 @@ data class BankSlipData(
     @SerializedName("linhaDigitavel") var barcodeNumber: String? = null,
     @SerializedName("valorPagar") var paymentValue: BigDecimal? = null
 )
+
+data class BankSlipBase64(
+    @SerializedName("file") var file: BankSlipBase64Data? = null
+)
+
+data class BankSlipBase64Data(
+    @SerializedName("mime") var mime: String? = null,
+    @SerializedName("data") var data: String? = null
+)
