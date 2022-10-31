@@ -8,4 +8,5 @@
     <string name="btn_copy">Copiar código de barras</string>
     <string name="btn_open_document">Abrir documento</string>
     <string name="btn_share">Compartilhar documento</string>
+    <string name="toast_message">Código de barras copiado com sucesso!</string>
 </resources>

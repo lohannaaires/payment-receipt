@@ -1,9 +1,14 @@
 package com.lohanna.paymentreceipt
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.lohanna.paymentreceipt.databinding.ActivityMainBinding
+import io.github.muddz.styleabletoast.StyleableToast
 import java.io.IOException
 import java.math.BigDecimal
 import java.text.NumberFormat
@@ -31,10 +36,25 @@ class MainActivity : AppCompatActivity() {
             }
             val dueDate = data.bankSlip?.dueDate?.let { getDateTime(it, "dd/MM/yyyy") }
             val value = data.bankSlip?.paymentValue?.let { getFormattedValue(it) }
+            val barcodeNumber = data.bankSlip?.barcodeNumber
 
             tvDatetime.text = dateTime
             tvValue.text = getString(R.string.value, value)
             tvDate.text = dueDate
+
+            btnCopy.setOnClickListener {
+                if(barcodeNumber != null) {
+                    copyToClipboard(barcodeNumber)
+
+                    StyleableToast.makeText(
+                        this@MainActivity,
+                        getString(R.string.toast_message),
+                        Toast.LENGTH_SHORT,
+                        R.style.mytoast
+                    ).show()
+                }
+
+            }
         }
     }
 
@@ -69,6 +89,12 @@ class MainActivity : AppCompatActivity() {
         )
 
         return numberFormat.format(value)
+    }
+
+    private fun copyToClipboard(text: CharSequence) {
+        val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clip = ClipData.newPlainText("label", text)
+        clipboard.setPrimaryClip(clip)
     }
 
 }

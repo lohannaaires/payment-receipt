@@ -12,11 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">@color/white_smoke</item>
         <item name="android:textColor">@color/black_olive</item>
     </style>
 
-    <style name="Theme.MyStyle" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-
+    <style name="mytoast">
+        <item name="stTextColor">#F6F6F6</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#3A3A3A</item>
+        <item name="stLength">SHORT</item>
+        <item name="stRadius">20dp</item>
     </style>
 </resources>
